@@ -1,0 +1,74 @@
+<html>
+	<head>
+		<script>
+			function validate()
+			{
+				with(document.team)
+				{
+					if(aName.value == "")
+					{
+						alert("Please enter valid name.");
+						Name.focus();
+						return false;
+					
+					}
+					if(aContact.value =="")
+					{
+						alert("Please enter valid contact number.");
+						Contact.focus();
+						return false;
+					}
+					if(Contact.value != "" && isNaN(Contact.value))
+					{
+						alert("Please enter valid contact number.");
+						Contact.focus();
+						return false;
+					}
+					
+					var email = Email.value;
+					if( email.indexOf("@") == -1)
+					{
+						alert("Please enter valid email.")}
+						Email.focus();
+						return false;
+					}
+					
+				}
+			}
+		
+		</script>
+	</head>
+	
+	<body>
+		<form name=reservation action="saveReservation.php" method=post onSubmit="return validate();">
+			<table>
+				<tr>
+					<td>RESERVATION<br /></td><td>&nbsp <td>&nbsp </td>
+				</tr>
+				<tr>
+					<td>Name: <input type=text name=Name /></td><td>&nbsp </td><td>&nbsp </td>
+				</tr>
+				<tr>
+					<td>Contact: <input type=text name=Contact /> </td><td>&nbsp </td><td>&nbsp </td>
+				</tr>
+				<tr>
+					<td>Email: <input type=text name=Email /></td><td>&nbsp </td><td>&nbsp </td>
+				</tr>
+				<tr>
+					<td>Campus: <select name=facilities>
+								<option value=fc>Futsal Court</option>
+								<option value=bc>Badminton Court</option>
+								<option value=gy>Gymnasium</option>
+								<option value=sp>Swimming pool</option>
+								<option value=sc>Squash court</option>
+								<option value=bl>Bowling</option>
+							</select></td><td>&nbsp </td><td>&nbsp </td>
+				</tr>
+				<tr>
+					<td>EQUIPMENTS FOR RENTAL: </td><td><input type="radio" name="equipment" value="Y">YES</td><td><input type="radio" name="equipment" value="N">NO</td>
+				</tr>
+			</table>
+				<input type=submit name=submit value=submit />
+		</form>
+	</body>
+</html>
