@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+	#box {
+	font-weight:100;
+	background:rgba(255, 255, 255, 0.5);
+	color:#fff;
+	padding:10px;
+	width:50%;
+	margin:1%;
+	border-radius:10px;
+	float:none;
+	font-size:17px
+	}
+	
+	
+	</style>
+</head>
+
+<body background="image/banner2.png"> 
+	<center>
+		<p id="demo"></p>
+
+		<script>
+		document.getElementById("demo").innerHTML = Date();
+		</script>
+			
+		<table>
+			<tr><td> <img src="image/banner.png" style= width="900" height="250"/> </td> </tr>	
+			
+		</table>
+		
+		<table cellspacing=25>
+		<center>
+				<tr><td><center> <a href="index.html"> <button style="background-color:#CCCC99; width: 150px; height: 50px"> <h3>  HOME  </h3> </button> </a> </center></td> 
+					<td><center> <a href="bodybuilding.html"> <button style="background-color:#CCCC99; width: 150px; height: 50px"> <h3>  BODYBUILDING  </h3> </button> </a> </center></td>
+					<td><center> <a href="anime.html"> <button style="background-color:#CCCC99; width: 150px; height: 50px"> <h3>  ANIME  </h3> </button> </a> </center></td> 
+					<td><center> <a href="feedback.html"> <button style="background-color:#CCCC99; width: 150px; height: 50px"> <h3>  FEEDBACK </h3> </button> </a> </center></td> 
+				</tr>	
+							
+		</center>	
+	</table>
+	
+	<form>
+		<fieldset>
+			<legend> <font face="Arial" color=black> <b> <h3>  ABOUT US </h3> </b> </font> </legend> 
+			<div id="box"> <p align=left> <font face="Century Gothic" color="#484848 "> test </div> </font> </p> </br>
+		</fieldset>
+	</form>	
+
+	
+	
+</body>
+	
