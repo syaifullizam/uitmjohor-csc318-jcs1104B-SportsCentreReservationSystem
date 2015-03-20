@@ -4,10 +4,10 @@
 	<style>
 	#box {
 	font-weight:100;
-	background:rgba(50, 50, 50, 0.3);
+	background:rgba(50, 50, 50, 0.2);
 	color:#fff;
 	padding:10px;
-	width:50%;
+	width:75%;
 	margin:1%;
 	border-radius:10px;
 	float:none;
@@ -43,9 +43,30 @@
 		</center>	
 		</table>
 	</center>
-	<form>
+	
+	<table cellspacing=45 style="60%"cellspacing=50 align=left>	
+			<tr><td width=20%><form>
+					<fieldset>
+					<legend><font face="Arial"> <b> <h2>  CONTACT US </h2> </b> </font> </legend>
+					<center>
+						 <font face="Comic Sans MS" size=3 color=black> <p> <ul style="list-style-type:none" align=center> <p>  <b>  FITNESS EMPIRE SPORTS CENTRE </b> </br></br>
+																																	LOT 5F, JALAN SAUJANA UTAMA, </br>
+																																	47810 PETALING JAYA, </br>
+																																	SELANGOR, MALAYSIA </br></br>
+																																	+6012-9997654 </br></br>
+																																	+603-5361256 </br> </br>
+																																	enquiry@fitnessempire.com.my </br> </br>
+																																	Our lines are open from : </br>
+																																	9:30am - 11:00pm Daily </br>
+																																	Excluding Public Holidays 
+	 
+							  </p> </div> </font> </p> </br> 
+					</center>
+					</fieldset>
+					</form> </td> 
+	<td width=50% rowspan=5> <form>
 		<fieldset>
-				<legend align="left"><font face="Arial"><h2><b>About Us</h2></b></legend>
+				<legend align="left"><font face="Arial"><h2><b>ABOUT US</h2></b></legend>
 				<center>
 				<div id="box"> <font face="Comic Sans MS" size=4 color=black> <p> <ul style="list-style-type:circle" align=left> <p> &nbsp &nbsp Fitness Empire Sports Centre was incorporated in January 2004. Our 1st centre was located in Segamat,Johore. After 2 years of operation, we have relocated our centre to a larger piece of land in Shah Alam,Selangor. In April 2009, our 2nd Challenger Sports Centre branch in Section 14, Petaling Jaya began its operation.  A year later, our 3rd centre in Kepong, have also started its operation in April 2010.
 																							  Our 4th Challenger Sports Centre branch in Ampang opened in October 2012. </p>
@@ -55,8 +76,29 @@
 																						  <p> &nbsp &nbsp Add on to that, we are also providing in-house equipment for rentals and are available at  reasonable and affordable fees. </p> </div> </font> </p> </br> 
 				</center>																		  
 		</fieldset>
-	</form>
+	</form> </td> </tr>
 	
+	<tr><td><form>
+					<fieldset>
+					<legend><font face="Arial"> <b> <h3>  VISION & MISSION </h3> </b> </font> </legend>
+					<center>
+						 <font face="Comic Sans MS" size=3 color=black> <p> <ul style="list-style-type:none" align=center> <p>  <b> VISION   </b> </br></br>
+																																	To win a good name among the public </br>
+																																	To become a listed sports centre in Malaysia within a decade </br></br>
+																																<b> MISSION </b> <br> </br>
+																																To provide the best quality of service to our customers 
+																																	
+																																	
+																																	
+																																																																		
+																																																																				 
+							  </p> </div> </font> </p> </br> 
+					</center>
+					</fieldset>
+					</form> </td>
+	</table>
+	
+	</br> </br> </br> </br> </br>
 	<center>
 	
 	<center><img src="image/LOGOS.png" alt= width="200" height="130"  border="0"></center>
