@@ -1,0 +1,90 @@
+<html>
+	<head>
+		
+	</head>
+	<body style="background-color:#66CCCC">
+	<center>
+		<p id="demo"></p>
+
+		<script>
+		document.getElementById("demo").innerHTML = Date();
+		</script>
+			
+		<table>
+			<tr><td> <img src="image/banner.png" style= width="900" height="250"/> </td> </tr>	
+			
+		</table>
+		
+		<table cellspacing=25>
+		<center>
+				<tr><td><center> <a href="index.html"> <button style="background-color:#0099CC; width: 150px; height: 50px"> <h3>  HOME  </h3> </button> </a> </center></td> 
+					<td><center> <a href="bodybuilding.html"> <button style="background-color:#0099CC; width: 150px; height: 50px"> <h3> ABOUT US  </h3> </button> </a> </center></td>
+					<td><center> <a href="anime.html"> <button style="background-color:#0099CC; width: 150px; height: 50px"> <h3>  SPECIAL OFFERS  </h3> </button> </a> </center></td> 
+					<td><center> <a href="reservation.htm"> <button style="background-color:#0099CC; width: 150px; height: 50px"> <h3>  RESERVATIONS </h3> </button> </a> </center></td> 
+					<td><center> <a href="feedback.html"> <button style="background-color:#0099CC; width: 150px; height: 50px"> <h3>  CONTACT US </h3> </button> </a> </center></td>
+				</tr>	
+							
+		</center>	
+		</table>
+	</center>
+	<form>
+		<fieldset>
+				<legend align="left"><font face="Arial"><h2><b>Check Reservation</h2></b></legend>
+				<center>
+				<div id="box"> <font face="Comic Sans MS" size=4 color=black> <p> <ul style="list-style-type:circle" align=left> <form name="cReserve" action="checkReservation.php" >
+			<p style="text-align:center">This Allows The Customers To Check Whether The Facilities Has Been Booked Or Not</p>
+		<table align="center">
+			<tr>
+				<td bgcolor="#0099CC"  style= "font-family:Comic Sans MS; border-color:silver; border-style:dotted" >
+					<table>
+						<br />
+						<th colspan=2 style="font-size:200%; text-align:center">  CHECK RESERVATION </th>
+						<tr>
+							<td> &nbsp </td><td> &nbsp </td>
+						</tr>
+						<tr>
+							<td>
+								<b> Date </b>
+							</td>
+							<td>
+								<input type="date" name="date" />
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<b> Start Time </b>
+							</td>
+							<td>
+								<input type="time" name="start" />	
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<b> End Time </b>
+							</td>
+							<td>
+								<input type="time" name="end" />
+							</td>
+						</tr>
+						<tr>
+							<td> &nbsp </td><td> &nbsp </td>
+						</tr>
+						<tr>
+							<td colspan=2>
+								<center><input type="submit" name=submit value="SUBMIT"></center>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr> 
+		</table>
+		</fieldset>
+	</form>
+	
+	<center>
+	
+	<center><img src="image/LOGOS.png" alt= width="200" height="130"  border="0"></center>
+	<p> <font face="Arial" <h6> &copy;2015 Fitness Empire. All Rights Reserved  </h6> </font> </p>
+	</center>
+</body>
+</html>
