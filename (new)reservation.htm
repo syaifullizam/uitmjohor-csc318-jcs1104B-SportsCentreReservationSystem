@@ -33,6 +33,21 @@
 						return false;
 					
 					}
+					
+					if(Age.value != "" && isNaN(Age.value))
+					{
+						alert("Please enter valid age.");
+						Age.focus();
+						return false;
+					}
+					var age = Age.value;
+					if(age.toString().length > '2')
+					{
+						alert("Please enter valid age.");
+						Age.focus();
+						return false;
+					}
+					
 					if(Address.value == "")
 					{
 						alert("Please enter valid address.");
@@ -56,16 +71,16 @@
 					var email = Email.value;
 					if( email.indexOf("@") == -1)
 					{
-						alert("Please enter valid email.")
+						alert("Please enter valid email.");
 						Email.focus();
 						return false;
 					}
 				}
 				return true;
 			}
-		
 		</script>
 </head>
+
 <body style="background-color:#66CCCC"> 
 	<center>
 		<p id="demo"></p>
@@ -91,7 +106,7 @@
 		</center>	
 		</table>
 	</center>
-	<form name=reservation action="saveReservation.php" method=post onSubmit="return validate();">
+	<form name=reservation action="saveReservation.php" method="POST" onSubmit="return validate();">
 		<fieldset>
 				<legend align="left"><font face="Arial"><h2><b>Reservation</h2></b></legend>
 				<center>
@@ -151,38 +166,40 @@
 									<tr>
 										<td>
 											<b>Facilities <b/>
-											<td><input type="radio" name="faci" value="futsal" >Futsal Court <br />
-												<input type="radio" name="faci" value="bad" >Badminton Court <br />
-												<input type="radio" name="faci" value="gym" >Gymnasium <br />										
-												<input type="radio" name="faci" value="pool" >Swimmimg Pool <br />
-												<input type="radio" name="faci" value="squash" >Squash Court <br />
-												<input type="radio" name="faci" value="bowling" >Bowling <br />
+											<td><select name=facilities >
+												<option value="Futsal Court" selected >Futsal Court</option>
+												<option value="Badminton Court" >Badminton Court </option>
+												<option value="Gymnasium" >Gymnasium </option>							
+												<option value="Swimming Pool" >Swimmimg Pool </option>
+												<option value="Squash Court" >Squash Court </option>
+												<option value="Bowling" >Bowling </option>
+												</select>
 											</td>
 										</td>
 									</tr>
 									<tr>
 										<td>
 											<b>Rental Hours <b/>
-												<td><input type="radio" name="rent" value="one" >1 Hour <br />
-												<input type="radio" name="rent" value="two" >2 Hour <br />
-												<input type="radio" name="rent" value="four" >4 Hour <br />
+												<td><input type="radio" name="rental" value="1" checked>1 Hour 
+												<input type="radio" name="rental" value="2" >2 Hour
+												<input type="radio" name="rental" value="3" >3 Hour
+												<input type="radio" name="rental" value="4" >4 Hour
 											</td>
 										</td>
 									</tr>
 									<tr>
 										<td>
-											<b>Rental Equipments <b/>
-											<td><input type="radio" name="equip" value="ball" >Balls <br />
-												<input type="radio" name="equip" value="racket" >Rackets <br />
-												<input type="radio" name="equip" value="attire" >Swimming Attires <br />
-												<input type="radio" name="equip" value="shoe" >Shoes <br />
+											<b>Rental Equipments <b>
+											<td><input type="radio" name="equip" value="Y" checked>YES
+												<input type="radio" name="equip" value="N" >NO
+
 											</td>
 										</td>
 									</tr>
 									<tr>
 										<td>
 											<b>Payment Type <b/>
-											<td><input type="radio" name="pay" value="visa" >Visa <br />
+											<td><input type="radio" name="pay" value="visa" checked >Visa
 												<input type="radio" name="pay" value="master" >Master Card
 											</td>
 										</td>
