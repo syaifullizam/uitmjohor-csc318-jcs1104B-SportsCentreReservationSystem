@@ -14,14 +14,15 @@
 	$contact = $_POST['Contact'];
 	$email = $_POST['Email'];
 	$facilities = $_POST['facilities'];
-	$rental = $_POST['rental'];
+	$tstart = $_POST['start'];
+	$tend = $_POST['end'];
 	$equip = $_POST['equip'];
 	$pay = $_POST['pay'];
 	$_SESSION["name"] = "$name";
 	
 
 	
-	$sql = "INSERT INTO reserved(name, age, address, contact, email, facilities, rental, equip, pay) VALUES ('$name','$age','$address','$contact','$email','$facilities','$rental','$equip','$pay')";
+	$sql = "INSERT INTO reserved(name, age, address, contact, email, facilities, start, end, equip, pay) VALUES ('$name','$age','$address','$contact','$email','$facilities','$tstart','$tend','$equip','$pay')";
 	
 	mysql_query($sql);
 	
@@ -30,5 +31,5 @@
 	else
 			echo "Problem occurred!"; 
 		
-	echo"<a href='teamList.php'></a>";
+	echo"<a href='teamList.php'>View Team List</a>";
 ?>
