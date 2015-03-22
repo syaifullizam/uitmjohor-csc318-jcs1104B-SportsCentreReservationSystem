@@ -1,0 +1,84 @@
+<html>
+	<head>
+		
+		<style>
+		#header{
+				background-color:cyan;
+				text-align:center;
+				padding:5px;
+			}
+		#nav{
+				line-height:30px;
+				background-color:cyan;
+				height:45px;
+				width:500px;
+				padding:5px;
+		}
+		#feed{
+				line-height:30px;
+				background-color:cyan;
+				height:325px;
+				width:500px;
+				padding:5px;
+			}
+		</style>
+		<script>
+			function feedback()
+			{
+				var cont = document.submission.contact.value;
+				
+				if(document.submission.nama.value=="")
+				{
+					window.alert("Please enter your name.");
+					document.submission.nama.onFocus();
+					return false;
+				}
+				if(isNaN(cont) || cont=="")
+				{
+					window.alert("Please enter a valid contact number.");
+					document.submission.contact.onFocus();
+					return false;
+				}
+				if(document.submission.email.value=="")
+				{
+					window.alert("Please enter a valid e-mail address.");
+					document.submission.email.onFocus();
+					return false;
+				}
+				if(document.submission.suggestion =="")
+				{
+					window.alert("Would you like you suggest anything?");
+					document.submission.suggestion.onFocus();
+					return false;
+				}
+				document.write("Thanks for filling it out!")
+			}
+		</script>
+		</head>
+	<body>
+		<div id="header"><center><h1>Feedback</h1></center></div><br/>
+		<center><div id="nav"><a href="indexhome.html">Home</a>*insert more links here*</div></center><br/><br/>
+		
+		<form name=feedback action="saveFeedback.php" method="POST" onSubmit="return feedback();">
+			<center>
+				<fieldset>
+					<legend align="left"><font face="Arial"><b><h4>Got something we can improve on? Leave your details and your suggestions here!</h4></b></legend>
+						<div id="feed">
+							<table>
+								<tr><td>&nbsp</td></tr>
+								<tr><td>Name: </td><td><input type=text name=nama /></td></tr>
+								<tr><td>Contact: </td><td><input type=text name=contact /></td></tr>
+								<tr><td>e-mail: </td><td><input type=text name=email /></td></tr>
+								<tr><td>Your suggestions (thank you!): </td><td><textarea name=suggestion rows="5" cols="15"/></textarea></td></tr>
+								<tr><td colspan=2> &nbsp</td></tr>
+								<tr><td colspan=2><center><input type=submit name="onSubmit" value="Submit"></center></td></tr>
+								<tr><td>&nbsp </td></tr>
+								<tr><td colspan=2><center>Our lines are always open!</center></td></tr>
+								<tr><td colspan=2><center><b>018-35575601</b><center></td></tr>
+							</table>
+						</div>
+						
+			</center>
+	</body>
+
+</html>
