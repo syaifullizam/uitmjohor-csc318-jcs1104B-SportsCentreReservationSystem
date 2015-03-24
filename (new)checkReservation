@@ -200,7 +200,7 @@
 							<td colspan=10><font face="Arial" size=3 color="#F8F8F8 ">PAYMENT : <?php echo $rs['pay']; ?> </font> </td>
 						</tr>
 						<tr>
-							<td> <input style="background-color:#F0F0F0 ; width: 100px; height: 25px" type=button onClick="submitForm('edit.php')" value="EDIT" /></td>
+							<td> <input style="background-color:#F0F0F0 ; width: 100px; height: 25px" type=button onClick="submitForm('editReservation.php')" value="EDIT" /></td>
 							<td> <input style="background-color:#F0F0F0 ; width: 100px; height: 25px" type=button onClick="submitForm('delete.php')" value="DELETE" /> </td>
 						</tr>
 						</tr>
@@ -238,5 +238,3 @@
 	</center>
 </body>
 </html>
-
-<?php session_destroy(); ?>
