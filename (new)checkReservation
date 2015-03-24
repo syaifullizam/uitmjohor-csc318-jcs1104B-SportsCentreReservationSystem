@@ -177,7 +177,7 @@
 						</tr>
 						
 						<tr>
-							<td colspan=10><font face="Arial" size=3 color="#F8F8F8 ">EMAL : <?php echo $rs['email']; ?> </font>  </td>
+							<td colspan=10><font face="Arial" size=3 color="#F8F8F8 ">EMAIL : <?php echo $rs['email']; ?> </font>  </td>
 						</tr>
 						
 						<tr>
