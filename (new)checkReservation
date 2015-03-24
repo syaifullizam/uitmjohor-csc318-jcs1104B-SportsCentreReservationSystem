@@ -119,8 +119,17 @@
 					$dAge = 0;
 				}
 				
+				if ($rs['equip'] == 'Y')
+				{
+					$rentEq = 5;
+				}
+				else
+				{
+					$rentEq = 0;
+				}
+				
 				$dis = $dMasa + $dAge;
-				$net = $ttl - $dis;
+				$net = $ttl - $dis + $rentEq;
 				
 			?>
 	</head>
