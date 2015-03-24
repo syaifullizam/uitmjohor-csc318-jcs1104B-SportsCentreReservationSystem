@@ -14,13 +14,18 @@
 				width:500px;
 				padding:5px;
 		}
-		#feed{
-				line-height:30px;
-				background-color:cyan;
-				height:325px;
-				width:500px;
-				padding:5px;
-			}
+			
+		#feed {
+	font-weight:100;
+	background:rgba(50, 50, 50, 0.2);
+	color:#fff;
+	padding:10px;
+	width:75%;
+	margin:1%;
+	border-radius:10px;
+	float:none;
+	font-size:17px
+	}
 		</style>
 		<script>
 			function feedback()
@@ -55,9 +60,29 @@
 			}
 		</script>
 		</head>
-	<body>
-		<div id="header"><center><h1>Feedback</h1></center></div><br/>
-		<center><div id="nav"><a href="indexhome.html">Home</a>*insert more links here*</div></center><br/><br/>
+	<body style="background-color:#66CCCC">
+		<center>
+			<p id="demo"></p>
+
+		<script>
+		document.getElementById("demo").innerHTML = Date();
+		</script>
+		
+		<table>
+			<tr><td> <img src="image/banner.png" style= width="900" height="250"/> </td> </tr>	
+			
+		</table>
+		
+		<table cellspacing=25>
+		<center>
+				<tr><td><center> <a href="index.html"> <button style="background-color:#0099CC; width: 150px; height: 50px"> <h4>  HOME  </h4> </button> </a> </center></td> 
+					<td><center> <a href="bodybuilding.html"> <button style="background-color:#0099CC; width: 150px; height: 50px"> <h4> ABOUT US  </h4> </button> </a> </center></td>
+					<td><center> <a href="anime.html"> <button style="background-color:#0099CC; width: 150px; height: 50px"> <h4>  SPECIAL OFFERS  </h4> </button> </a> </center></td> 
+					<td><center> <a href="feedback.html"> <button style="background-color:#0099CC; width: 150px; height: 50px"> <h4>  RESERVATIONS </h4> </button> </a> </center></td> 
+				</tr>	
+							
+		</center>
+		</table>
 		
 		<form name=feedback action="saveFeedback.php" method="POST" onSubmit="return feedback();">
 			<center>
@@ -77,8 +102,12 @@
 								<tr><td colspan=2><center><b>018-35575601</b><center></td></tr>
 							</table>
 						</div>
-						
+				</fieldset>		
 			</center>
+		</form>	
+			<center><img src="image/LOGOS.png" alt= width="200" height="130"  border="0"></center>
+	<p> <font face="Arial" <h6> &copy;2015 Fitness Empire. All Rights Reserved  </h6> </font> </p>
+	</center>
 	</body>
 
 </html>
