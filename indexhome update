@@ -1,0 +1,53 @@
+<html>
+	<head>
+		<style>
+			#header{
+				background-color:cyan;
+				text-align:center;
+				padding:5px;
+			}
+			
+			#nav{
+				line-height:30px;
+				background-color:cyan;
+				height:650px;
+				width:200px;
+				float:left;
+				padding:5px;
+			}
+			
+			#footer{
+				background-color:cyan;
+				text-align:center;
+				padding:5px;
+			}
+			
+		</style>
+	</head>
+	<body style="background-color:#66CCCC">
+	<center>
+		<p id="demo"></p>
+		<script>
+		document.getElementById("demo").innerHTML = Date();
+		</script>
+			<table>
+			<tr><td> <img src="../groupweb/sports/image/banner.png" style= width="900" height="250"/> </td> </tr>	
+			
+		</table>
+		
+			<div id="nav">
+				<h3><a href="feedback.html">feedback!</a></h3><br/>
+				stuff<br/>
+				stuff<br/>
+				stuff<br/>
+			</div>
+			&nbsp &nbsp &nbsp 
+		<center><a href="../groupweb/pics/main.png" target="_blank"><img src="../groupweb/pics/main.png" width="700" height="550" border="0" /></a><center>
+		<br/><br/>
+		<div id="footer">
+			<center><img src="../groupweb/sports/image/LOGOS.png" alt= width="200" height="130"  border="0"/></center>
+			<center><p> <font face="Arial" <h6> &copy;2015 Fitness Empire. All Rights Reserved  </h6> </font> </p></center>
+		</div>
+		</center>
+		</body>
+</html>
