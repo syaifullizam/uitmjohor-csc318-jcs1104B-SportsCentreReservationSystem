@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+	#box {
+	font-weight:100;
+	background:rgba(50, 50, 50, 0.2);
+	color:#fff;
+	padding:10px;
+	width:65%;
+	margin:1%;
+	border-radius:10px;
+	float:none;
+	font-size:17px
+	}
+	
+	
+	</style>
+</head>
+
+<body style="background-color:#66CCCC"> 
+	<center>
+		<p id="demo"></p>
+
+		<script>
+		document.getElementById("demo").innerHTML = Date();
+		</script>
+			
+		<table>
+			<tr><td> <img src="image/banner.png" style= width="900" height="250"/> </td> </tr>	
+			
+		</table>
+		
+		<table cellspacing=25>
+		<center>
+				<tr><td><center> <a href="index.html"> <button style="background-color:#0099CC; width: 150px; height: 50px"> <h4>  HOME  </h4> </button> </a> </center></td> 
+					<td><center> <a href="bodybuilding.html"> <button style="background-color:#0099CC; width: 150px; height: 50px"> <h4> ABOUT US  </h4> </button> </a> </center></td>
+					<td><center> <a href="anime.html"> <button style="background-color:#0099CC; width: 150px; height: 50px"> <h4>  SPECIAL OFFERS  </h4> </button> </a> </center></td> 
+					<td><center> <a href="feedback.html"> <button style="background-color:#0099CC; width: 150px; height: 50px"> <h4>  RESERVATIONS </h4> </button> </a> </center></td> 
+				</tr>	
+							
+		</center>	
+		</table>
+	</center>
+	
+	<form border="3"> <center>
+			<fieldset>
+				<legend> <img src="image/SpecialOffer.jpg" alt= width="300" height="150" border="0"></a> </legend>
+				 <div id="box"> <p> <font face="Century Gothic" color="#282828"> 
+				 <h4> <b>SPECIAL DISCOUNTS</b> are given to honored customers of Empire Fitness Sports Centre. Refer to the promotions stated below. 
+						For any enquiries and assistance, our operators are available at 8am - 5pm daily.</p>
+						<center><ul align=left> <li> BOOKING HOURS	: >2 hours (10% DISCOUNT!) For every consecutive hours </li>
+							 <li> CHILDREN	: Children aged below 12 (30% DISCOUNT!) </li>
+							 <li> SENIOR CITIZENS	: Senior citizens aged above 60 (30% DISCOUNT!) </li> </ul> </h4> </div> </font> </p> </br> </center>
+				
+					
+			
+			</fieldset> </center>
+		</form>
+	
+	<center>
+	<center><img src="image/LOGOS.png" alt= width="200" height="130"  border="0"></center>
+	<p> <font face="Arial" <h6> &copy;2015 Fitness Empire. All Rights Reserved  </h6> </font> </p>
+	</center>
+</body>
+	
