@@ -18,6 +18,21 @@
 ?>
 <html>
 	<head>
+	<style>
+	#box {
+	font-weight:100;
+	background:rgba(50, 50, 50, 0.4);
+	color:#fff;
+	padding:10px;
+	width:85%;
+	margin:1%;
+	border-radius:10px;
+	float:none;
+	font-size:17px
+	}
+	
+	
+	</style>
 		<script>
 			function submitForm(action)
 			{
@@ -128,87 +143,86 @@
 					<td><center> <a href="bodybuilding.html"> <button style="background-color:#0099CC; width: 150px; height: 50px"> <h3> ABOUT US  </h3> </button> </a> </center></td>
 					<td><center> <a href="anime.html"> <button style="background-color:#0099CC; width: 150px; height: 50px"> <h3>  SPECIAL OFFERS  </h3> </button> </a> </center></td> 
 					<td><center> <a href="reservation.htm"> <button style="background-color:#0099CC; width: 150px; height: 50px"> <h3>  RESERVATIONS </h3> </button> </a> </center></td> 
-					<td><center> <a href="feedback.html"> <button style="background-color:#0099CC; width: 150px; height: 50px"> <h3>  CONTACT US </h3> </button> </a> </center></td>
+					
 				</tr>	
 							
 		</center>	
 		</table>
-	</center>
+		
+		
 	<form id=view>
 		<fieldset>
 				<legend align="left"><font face="Arial"><h2><b>Check Reservation</h2></b></legend>
 				<center>
-				<div id="box"> <font face="Comic Sans MS" size=4 color=black> <p> <ul style="list-style-type:circle" align=left> <form name="cReserve" action="checkReservation.php" >
-			<p style="text-align:center">This Allows The Customers To Edit OR Cancel Reservation</p>
-		<table align="left">
-			<tr>
-				<td bgcolor="#0099CC"  style= "font-family:Comic Sans MS; border-color:silver; border-style:dotted" >
-					<table>
-						<br />
-						<th style="font-size:200%; text-align:center">  CHECK RESERVATION </th>
-						<tr>
-							<td>Name : <?php echo $rs['name']; ?> </td>
-						</tr>
-						<tr>
-							<td>Age : <?php echo $rs['age']; ?> </td>
-						</tr>
-						<tr>
-							<td>Address : <?php echo $rs['address']; ?> </td>
-						</tr>
-						
-						<tr>
-							<td>Contact : 0<?php echo $rs['contact']; ?> </td>
-						</tr>
-						
-						<tr>
-							<td>Email : <?php echo $rs['email']; ?> </td>
-						</tr>
-						
-						<tr>
-							<td>Facilities : <?php echo $rs['facilities']; ?> </td>
-						</tr>
-						
-						<tr>
-							<td>Start Time : <?php echo $rs['start']; ?> </td>
-						</tr>
-						
-						<tr>
-							<td>End Time : <?php echo $rs['end']; ?> </td>
-						</tr>
-						
-						<tr>
-							<td>Equipment : <?php echo $eq; ?> </td>
-						</tr>
-						
-						<tr>
-							<td>Payment : <?php echo $rs['pay']; ?> </td>
-						</tr>
-						<tr>
-							<td>&nbsp </td> <td> <input type=button onClick="submitForm('edit.php')" value="EDIT" /> <input type=button onClick="submitForm('delete.php')" value="DELETE" />
-						</tr>
-						</tr>
-						
-						
-						
-					</table>
-				</td>
-			</tr> 
-		</table>
+				<p> <ul style="list-style-type:circle" align=left> <form name="cReserve" action="checkReservation.php" >
+			<p style="text-align:center">Changes of Customer Details can be done below. Click on Edit OR Delete.</p>
 		<table align="center">
-			<tr>
-				<td bgcolor="#0099CC"  style= "font-family:Comic Sans MS; border-color:silver; border-style:dotted" >
-					<table>
+			<tr> 
+				<td>
+					<div id="box"><table cellspacing=20> 
 						<br />
-						<th style="font-size:200%; text-align:center">TOTAL AMOUNT </th>
+						<th colspan=10> <font face="Comic Sans MS" size=3.5 color="#F8F8F8 "><h3>   RESERVATION DETAILS</h3> </font></th>
 						<tr>
-							<td>Total </td><td>:<?php echo $ttl ?></td>
+							<td colspan=10> <font face="Arial" size=3 color="#F8F8F8">NAME : <?php echo $rs['name']; ?> </font>  </td>
 						</tr>
 						<tr>
-							<td>Total Discount </td><td>:<?php echo $dis ?></td>
+							<td colspan=10><font face="Arial" size=3 color="#F8F8F8 ">AGE : <?php echo $rs['age']; ?>  </font> </td>
 						</tr>
 						<tr>
-							<td>Net Total</td><td>:<?php echo $net ?></td>
+							<td colspan=10><font face="Arial" size=3 color="#F8F8F8 ">ADDRESS : <?php echo $rs['address']; ?> </font>  </td>
 						</tr>
+						
+						<tr>
+							<td colspan=10><font face="Arial" size=3 color="#F8F8F8 ">CONTACT : <?php echo $rs['contact']; ?> </font>  </td>
+						</tr>
+						
+						<tr>
+							<td colspan=10><font face="Arial" size=3 color="#F8F8F8 ">EMAL : <?php echo $rs['email']; ?> </font>  </td>
+						</tr>
+						
+						<tr>
+							<td colspan=10><font face="Arial" size=3 color="#F8F8F8 ">FACILITIES : <?php echo $rs['facilities']; ?> </font>  </td>
+						</tr>
+						
+						<tr>
+							<td colspan=10><font face="Arial" size=3 color="#F8F8F8 ">START TIME : <?php echo $rs['start']; ?> </font>  </td>
+						</tr>
+						
+						<tr>
+							<td colspan=10><font face="Arial" size=3 color="#F8F8F8 ">END TIME : <?php echo $rs['end']; ?> </font>  </td>
+						</tr>
+						
+						<tr>
+							<td colspan=10><font face="Arial" size=3 color="#F8F8F8 ">EQUIPMENT : <?php echo $eq; ?> </font>  </td>
+						</tr>
+						
+						<tr>
+							<td colspan=10><font face="Arial" size=3 color="#F8F8F8 ">PAYMENT : <?php echo $rs['pay']; ?> </font> </td>
+						</tr>
+						<tr>
+							<td> <input style="background-color:#F0F0F0 ; width: 100px; height: 25px" type=button onClick="submitForm('edit.php')" value="EDIT" /></td>
+							<td> <input style="background-color:#F0F0F0 ; width: 100px; height: 25px" type=button onClick="submitForm('delete.php')" value="DELETE" /> </td>
+						</tr>
+						</tr>
+						
+						
+					</font>	
+					</table>
+
+				</td>
+				<td>
+					<div id="box"><table cellspacing=30 >
+						<br />
+						<th colspan=10> <font face="Comic Sans MS" size=3.5 color="#F8F8F8 "> RESERVATION FEE </font></th>
+						<tr>
+							<td> <font face="Arial" size=3 color="#F8F8F8">Total </td><td>:<?php echo $ttl ?> </font></td>
+						</tr>
+						<tr>
+							<td> <font face="Arial" size=3 color="#F8F8F8">Total Discount </td><td>:<?php echo $dis ?> </font></td>
+						</tr>
+						<tr>
+							<td> <font face="Arial" size=3 color="#F8F8F8">Net Total</td><td>:<?php echo $net ?> </font></td>
+						</tr> </font>
 					</table>
 				</td>
 			</tr> 
@@ -217,7 +231,7 @@
 		</fieldset>
 	</form>
 	
-	<center>
+
 	
 	<center><img src="image/LOGOS.png" alt= width="200" height="130"  border="0"></center>
 	<p> <font face="Arial" <h6> &copy;2015 Fitness Empire. All Rights Reserved  </h6> </font> </p>
